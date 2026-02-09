@@ -9,17 +9,42 @@
 </head>
 
 <body>
-    <div class="painel">
-        <div class="nome-id">
-            <h3 class="id-pokemon">ID</h3>
-            <h3 class="nome-pokemon">Nome</h3>
+    <nav class="navlist">
+        <h1 class="logo">
+            PokéXplorer
+        </h1>
+        <input type="button" value="Full Screen">
+    </nav>
+    <section id="section-body">
+        <div class="info-basic">
+            <div class="tipo">
+                <!-- Imagem aqui -->
+            </div>
+            <div class="evolucao">
+                <!-- Lista de Evolução -->
+            </div>
         </div>
-        <img class="img-pokemon" src="" alt="Pokémon">
-        <div class="explore-btn">
-            <input type="button" value="⬅️" id="beforePokemon" onclick="anteriorPokemon()">
-            <input type="button" value="➡️" id="afterPokemon" onclick="proximoPokemon()">
+        <div class="painel-poke">
+            <div class="nome-id">
+                <h3 class="id-pokemon">ID</h3>
+                <h3 class="nome-pokemon">Nome</h3>
+            </div>
+            <img class="img-pokemon" src="" alt="Pokémon">
+            <div class="explore-btn">
+                <input type="button" value="⬅️" id="beforePokemon" onclick="anteriorPokemon()">
+                <input type="button" value="➡️" id="afterPokemon" onclick="proximoPokemon()">
+            </div>
         </div>
-    </div>
+        <div class="info-skills">
+            <div class="hability">
+                <!-- Habilidade aqui -->
+            </div>
+            <div class="status">
+                <!-- Div para HP-->
+                <!-- Div para DMG-->
+            </div>
+        </div>
+    </section>
 </body>
 <script src="script.js"></script>
 
