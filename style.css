@@ -42,3 +42,10 @@ body {
     width: 512px;
     image-rendering: pixelated;
 }
+
+.explore-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
