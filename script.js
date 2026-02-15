@@ -8,7 +8,13 @@ async function procurarPokemon(pokemonID) {
         return {
             id: dados.id,
             nome: dados.name,
-            imagem: dados.sprites.front_default
+            imagem: dados.sprites.front_default,
+            tipo: dados.types.map(t => t.type.name),
+            habilidade: dados.abilities.map(h => h.ability.name),
+            status: dados.stats.map(s => ({
+                name: s.stat.name,
+                base_stat: s.base_stat
+            }))
         }
     } catch (error) {
         console.log("Erro encontrado! Erro:", error.message);
