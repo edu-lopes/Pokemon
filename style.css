@@ -23,6 +23,14 @@ body {
     padding: 20px;
 }
 
+#section-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .painel-poke {
     display: flex;
     flex-direction: column;
